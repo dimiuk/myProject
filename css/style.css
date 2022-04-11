@@ -52,7 +52,7 @@ a.header-link {
   /* font-family: "Send Flowers", cursive; */
   position: absolute;
   left: 35%;
-  top: -10%;
+  top: -5%;
   z-index: 10;
   padding: 10px;
 }
@@ -307,12 +307,8 @@ ul {
   display: none;
 }
 
-.active {
+.carousel {
   width: 40%;
-}
-.active img {
-  width: 50%;
-  height: auto;
 }
 
 @media (min-width: 744px) {
