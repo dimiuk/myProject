@@ -20,3 +20,12 @@ function validateForm(event) {
     feedbackForm.innerText = "Your question must be more than 10 characters";
   }
 }
+
+const hamburgerMenu = document.querySelector(".mobile");
+const asideMenu = document.querySelector(".mobile-menu");
+
+hamburgerMenu.addEventListener("click", openAsideMenu);
+
+function openAsideMenu() {
+  asideMenu.classList.toggle("show");
+}

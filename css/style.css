@@ -11,6 +11,31 @@ header {
   z-index: 3;
   background-color: white;
 }
+
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  background-color: rgb(144, 164, 144);
+  color: rgb(250, 250, 250);
+  display: none;
+  text-align: center;
+}
+
+.mobile-menu a {
+  /* padding: 10px; */
+  margin-top: 20px;
+}
+
+.show {
+  display: block;
+}
+
+.mobile-menu a {
+  display: block;
+}
+
 .mobile img,
 a {
   cursor: pointer;
@@ -24,16 +49,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  /* position: fixed; */
-  /* width: 100%;
-  height: 30px; */
-  /* background-color: rgb(246, 241, 241); */
 }
 
 a.header-link {
   text-decoration: none;
-  color: rgb(146, 146, 118);
+  color: rgb(247, 247, 217);
   text-transform: uppercase;
+}
+
+.links {
   display: none;
 }
 .cattery-name {
@@ -154,12 +178,9 @@ ul {
 .best-cattery-img {
   text-align: center;
 }
-/* .best-cattery-text ul li {
-  padding: 10px 0;
+.best-cattery-img-desktop {
+  display: none;
 }
-.best-cattery-text ul {
-  padding: 0;
-} */
 
 .stud,
 .queen {
@@ -235,6 +256,7 @@ ul {
   color: gray;
   line-height: 30px;
   padding: 0 20px;
+  text-align: center;
 }
 
 .gallery {
@@ -248,13 +270,9 @@ ul {
   text-align: center;
 }
 
-.gallery-img img {
-  width: 90%;
-  padding: 20px 0;
-}
-
-.gallery-img {
-  text-align: center;
+.carousel {
+  margin: 20px auto;
+  width: 50%;
 }
 
 .feed {
@@ -272,6 +290,7 @@ ul {
   color: gray;
   line-height: 30px;
   padding: 0 20px;
+  text-align: center;
 }
 
 .contact-form {
@@ -294,6 +313,28 @@ ul {
   font-size: 25px;
 }
 
+#question-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#question-form input,
+#question-form button,
+#question-form label {
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+input,
+button {
+  padding: 10px;
+}
+textarea {
+  text-align: center;
+}
+
 .footer {
   color: rgb(153, 152, 152);
   background-color: rgb(27, 27, 26);
@@ -303,21 +344,23 @@ ul {
 .footer p {
   margin: 0;
 }
-.best-cattery-img-desktop {
-  display: none;
-}
-
-.carousel {
-  width: 40%;
-}
 
 @media (min-width: 744px) {
+  .mobile-menu {
+    display: none;
+  }
   .mobile {
     display: none;
   }
   a.header-link {
     display: inline-block;
     margin: 0 10px;
+    text-decoration: none;
+    color: rgb(146, 146, 118);
+  }
+
+  .links {
+    display: block;
   }
 
   .about-cattery-desktop {
@@ -331,8 +374,8 @@ ul {
   }
   .about-cattery {
     padding: 100px 50px;
-    /* font-size: 18px; */
   }
+
   .about-cattery-img img {
     width: 60%;
   }
@@ -350,7 +393,6 @@ ul {
   }
   .breed-features {
     padding: 100px 50px;
-    /* font-size: 18px; */
   }
   .breed-features-img img {
     width: 50%;
@@ -366,14 +408,29 @@ ul {
     flex-direction: column-reverse;
     width: 50%;
   }
+  .best-cattery-img img {
+    height: 50%;
+    padding: 20px 0;
+  }
 
   hr {
     margin-bottom: 50px;
     margin-left: 20%;
   }
 
-  .stud-img img,
+  .stud-img img {
+    width: 40%;
+  }
+
   .queen-img img {
     width: 30%;
+  }
+
+  .contacts-header {
+    margin-bottom: 50px;
+  }
+
+  .tel-img {
+    margin-top: 30px;
   }
 }

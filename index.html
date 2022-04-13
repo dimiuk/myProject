@@ -40,6 +40,16 @@
     </header>
 
     <main>
+      <aside class="mobile-menu">
+        <a class="header-link" href="#home">home</a>
+        <a class="header-link" href="#about-us">about us</a>
+        <a class="header-link" href="#mummy">Mummy</a>
+        <a class="header-link" href="#daddy">Daddy</a>
+        <a class="header-link" href="#babies">Babies</a>
+        <a class="header-link" href="#gallery">Gallery</a>
+        <a class="header-link" href="#contacts">Contacts</a>
+      </aside>
+
       <section class="cattery-name">
         <h1 class="cattery-in-head" id="home">Felix cattery</h1>
         <img src="img/bysen-head.jpeg" alt="cat-face" />
@@ -149,7 +159,12 @@
           <img src="img/bysen-pelow.jpeg" alt="cat" />
         </div>
         <div class="stud-text">
-          <p>Under construction</p>
+          <p>
+            Bysen - With an impressive pedigree stretching back more than 5
+            generation, our stud is also a happy father to several successful
+            litters. He has an impeccable colour and folders ears. Bysen is the
+            true essence of a Scottish Fold.
+          </p>
         </div>
       </section>
       <section class="queen">
@@ -160,22 +175,65 @@
           <img src="img/R2.JPG" alt="cat" />
         </div>
         <div class="queen-text">
-          <p>Under construction</p>
+          <p>
+            Cassandra - With also an impressive pedigree that goes back several
+            generations, our queen has perfectly soft fur and delightful dark
+            shades of grey.
+          </p>
         </div>
       </section>
       <section class="litter">
         <div class="litter-header">
-          <h1 id="babies">Our last litter</h1>
+          <h1 id="babies">Our later litter</h1>
         </div>
+
         <div class="litter-img">
           <img src="" alt="" />
         </div>
         <div class="litter-text">
           <p>
-            we had 5 amazing babies - Scottish fold boys and Scottish straight
+            We had 5 amazing babies - Scottish fold boys and Scottish straight
             girls. All of them had contrasted Black silver tabby color and
             pattern. How great it was and all sold out.
           </p>
+        </div>
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Lit1.JPG" class="d-block w-100" alt="kitten" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/Lit2.JPG" class="d-block w-100" alt="kittens" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/Lit3.JPG" class="d-block w-100" alt="kittens" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/Lit14.JPG" class="d-block w-100" alt="kittens" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
 
@@ -228,10 +286,6 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
-        <div class="gallery-img">
-          <img src="" alt="" />
-        </div>
       </section>
 
       <section class="feed">
@@ -245,38 +299,39 @@
     </main>
 
     <section class="contact-form">
-      <div class="question-header">
-        <h1>Have a question?</h1>
-      </div>
+      <div class="contact-form-desktop">
+        <div class="question-header">
+          <h1>Have a question?</h1>
+        </div>
+        <div class="form" data-netlify="true">
+          <form id="question-form">
+            <label for="textarea">Please submit your question</label>
+            <textarea
+              id="textarea"
+              cols="50"
+              rows="10"
+              placeholder="your question"
+            ></textarea>
+            <input type="email" id="email" placeholder="your e-mail" />
+            <input type="number" id="telephone" placeholder="your telephone" />
+            <button type="submit" id="button">Submit</button>
+          </form>
+          <p id="feedback-form"></p>
+        </div>
 
-      <div class="form">
-        <form id="question-form">
-          <label for="textarea">Your question</label>
-          <textarea
-            id="textarea"
-            cols="50"
-            rows="10"
-            placeholder="your question"
-          ></textarea>
-          <input type="email" id="email" placeholder="your e-mail" />
-          <input type="number" id="telephone" placeholder="your telephone" />
-          <button type="submit" id="button">Submit</button>
-        </form>
-        <p id="feedback-form"></p>
-      </div>
-
-      <div class="contacts">
-        <div class="contacts-header">
-          <h1 id="contacts">Our contacts</h1>
+        <div class="contacts">
+          <div class="contacts-header">
+            <h1 id="contacts">Our contacts</h1>
+          </div>
+          <div class="email-img">
+            <img src="img/em6.png" alt="email icon" />
+          </div>
+          <div class="email-text"><p>dmitryfakanov@gmail.com</p></div>
+          <div class="tel-img">
+            <img src="img/tel1.png" alt="telephone icon" />
+          </div>
+          <div class="tel-text"><p>+44 7491274792</p></div>
         </div>
-        <div class="email-img">
-          <img src="img/em6.png" alt="email icon" />
-        </div>
-        <div class="email-text"><p>dmitryfakanov@gmail.com</p></div>
-        <div class="tel-img">
-          <img src="img/tel1.png" alt="telephone icon" />
-        </div>
-        <div class="tel-text"><p>+44 7491274792</p></div>
       </div>
     </section>
     <footer class="footer">
