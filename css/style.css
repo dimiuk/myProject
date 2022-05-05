@@ -8,7 +8,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 15;
   background-color: white;
 }
 
@@ -63,27 +63,27 @@ a.header-link {
 .cattery-name {
   position: relative;
   margin-top: 50px;
+  background-image: url("../img/bysen-head.jpeg");
+  background-size: cover;
+  padding: 290px 0px;
 }
-.cattery-name img {
-  width: 100%;
-}
+
 .cattery-in-head {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   color: rgb(1, 100, 1);
   margin: 0;
   font-family: "Grape Nuts", cursive;
-  /* font-family: "Send Flowers", cursive; */
   position: absolute;
-  left: 35%;
-  top: -5%;
+  left: 0%;
+  top: 0;
   z-index: 10;
   padding: 10px;
 }
 .available-kittens a {
   text-decoration: none;
   color: rgb(1, 100, 1);
-  background-color: lightyellow;
+  background-color: rgb(240, 255, 240);
   border-radius: 5px;
   position: absolute;
   width: auto;
@@ -91,6 +91,7 @@ a.header-link {
   top: 80%;
   z-index: 5;
   padding: 10px;
+  font-size: 15px;
 }
 
 .about-cattery {
@@ -345,6 +346,13 @@ textarea {
   margin: 0;
 }
 
+@media (min-width: 550px) {
+  .cattery-in-head {
+    left: 55%;
+    font-size: 45px;
+  }
+}
+
 @media (min-width: 744px) {
   .mobile-menu {
     display: none;
@@ -361,6 +369,15 @@ textarea {
 
   .links {
     display: block;
+  }
+
+  .cattery-name {
+    padding: 300px 0px;
+  }
+
+  .cattery-in-head {
+    font-size: 70px;
+    left: 45%;
   }
 
   .about-cattery-desktop {
